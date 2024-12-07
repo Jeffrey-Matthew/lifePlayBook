@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Reveal</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>You landed on Choice {{ choice }}</h1>
+
+        {% if choice == "1" %}
+        <p>Your surprise is a beautiful message!</p>
+        {% elif choice == "2" %}
+        <p>Here's a wonderful video!</p>
+        <iframe src="https://drive.google.com/file/d/your-google-drive-video-id/preview" width="640"
+            height="480"></iframe>
+        {% elif choice == "3" %}
+        <p>Here's a lovely image!</p>
+        <img src="/static/images/surprise_image.jpg" alt="Surprise Image" />
+        {% elif choice == "4" %}
+        <p>Your final surprise is a secret text reveal!</p>
+        {% endif %}
+    </div>
+    <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+
+</body>
+
+</html>

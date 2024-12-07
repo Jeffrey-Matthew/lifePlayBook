@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette Game</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/game.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Game Mode Toggle -->
+        <div class="game-mode-toggle">
+            <label for="gameMode">Game Mode:</label>
+            <select id="gameMode" onchange="toggleGameMode()">
+                <option value="automatic">Automatic</option>
+                <option value="manual">Manual</option>
+            </select>
+        </div>
+
+        <h1>Roulette Game</h1>
+
+        <!-- Roulette wheel -->
+        <div class="roulette-container">
+            <div class="roulette-wheel" id="roulette-wheel">
+                <div class="segment" id="choice-1" onclick="manualSelect(1)">Family</div>
+                <div class="segment" id="choice-2" onclick="manualSelect(2)">School</div>
+                <div class="segment" id="choice-3" onclick="manualSelect(3)">God</div>
+                <div class="segment" id="choice-4" onclick="manualSelect(4)">College</div>
+            </div>
+        </div>
+
+        <!-- Dice roll button for automatic mode -->
+        <button id="roll-dice" class="btn btn-primary" onclick="rollDice()">Roll the Dice</button>
+
+        <!-- Display the result -->
+        <div id="result" style="margin-top: 20px;"></div>
+        <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+
+    </div>
+</body>
+
+</html>
