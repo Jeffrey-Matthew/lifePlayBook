@@ -5,6 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Reveal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .video-card {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .video-card h3 {
+            padding: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .back-button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,16 +66,106 @@
         <h1>You landed on Choice {{ choice }}</h1>
 
         {% if choice == "1" %}
-        <p>Your surprise is a beautiful message!</p>
+        <p>Your small beautiful world, woman!</p>
+        <div class="video-container">
+            <!-- Video Cards for Google Drive Embeds -->
+            <div class="video-card">
+                <h3>Mom</h3>
+
+                <iframe src="https://drive.google.com/file/d/13buOh1Lvk8wm4Ze_kaw1b5X1yVbFA30e/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Dad</h3>
+
+                <iframe src="https://drive.google.com/file/d/11DsQdaFsuKAnMYDqyXJ1q1XjPb1XHZKz/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Bro</h3>
+
+                <iframe src="https://drive.google.com/file/d/1uVygScwjaB4zQjYpRUszm0hOVbjANErE/preview"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
         {% elif choice == "2" %}
-        <p>Here's a wonderful video!</p>
-        <iframe src="https://drive.google.com/file/d/your-google-drive-video-id/preview" width="640"
-            height="480"></iframe>
+        <p>Friends are beloved!</p>
+        <div class="video-container">
+            <!-- Video Cards for Google Drive Embeds -->
+            <div class="video-card">
+                <h3>Shrinidhi</h3>
+
+                <iframe src="https://drive.google.com/file/d/1CcJbCZwmktqh8cR9oFoXMFek_0hT6wtZ/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Joselin</h3>
+
+                <iframe src="https://drive.google.com/file/d/1wKLyj9G63tvnW6YcvDIFeT7TfR6alXxU/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Diana</h3>
+
+                <iframe src="https://drive.google.com/file/d//11gNOrflnqVWK3YUSezAyOp1ax6iWfkMB/preview"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
         {% elif choice == "3" %}
-        <p>Here's a lovely image!</p>
-        <img src="/static/images/surprise_image.jpg" alt="Surprise Image" />
+        <p>All glory to God</p>
+        <div class="video-container">
+            <!-- Video Cards for Google Drive Embeds -->
+            <div class="video-card">
+                <h3>Jerin</h3>
+                <iframe src="https://drive.google.com/file/d/1GFbO0E8h7F_6ID97-08gtlp4UwHkSn4v/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Jessica</h3>
+                <iframe src="https://drive.google.com/file/d/15uRqbnxTgrEpSS70LtztA5UoUKXYLDkG/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Steffi</h3>
+                <iframe src="https://drive.google.com/file/d/17Fz8Wm934R4DaScDRIdEBMoScQ13eyrk/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Jacklin</h3>
+                <iframe src="https://drive.google.com/file/d/1DFjg5MhcPdD2u8za-4FKjzMr9H3Dl3TP/preview"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
         {% elif choice == "4" %}
-        <p>Your final surprise is a secret text reveal!</p>
+        <p>The fabulous four, my lady!</p>
+        <div class="video-container">
+            <!-- Video Cards for Google Drive Embeds -->
+            <div class="video-card">
+                <h3>Shreya</h3>
+
+                <iframe src="https://drive.google.com/file/d/1V-kH9AkC10GSFS_VYL3kv9vs-r_bGIuk/preview"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="video-card">
+                <h3>Jessica</h3>
+
+                <iframe src="https://drive.google.com/file/d/1JDAnqhoxvzO2XpPBpB4NBof09QPhWZ_F/preview"
+                    frameborder="0"></iframe>
+            </div>
+
+        </div>
+        {% elif choice == "5" %}
+        <p>Your self-obsessed man!</p>
+        <div class="video-container">
+            <!-- Video Cards for Google Drive Embeds -->
+            <div class="video-card">
+                <h3>Jeff</h3>
+
+
+            </div>
+
+
+        </div>
         {% endif %}
     </div>
     <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
