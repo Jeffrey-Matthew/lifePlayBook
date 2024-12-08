@@ -5,8 +5,8 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 # Predefined username and password
-USERNAME = 'test'
-PASSWORD = 'test123'
+USERNAME = 'jolin'
+PASSWORD = 'dekh lenge'
 
 # Login Page
 
